@@ -1,0 +1,70 @@
+{
+  "name": "egg-rbac-instance",
+  "version": "0.4.0",
+  "description": "Role Based Access Control for eggjs",
+  "eggPlugin": {
+    "name": "rbac",
+    "dependencies": [
+      "mongoose"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-rbac"
+  ],
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "await-event": "^2.1.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.6",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "egg-mongoose": "^2.1.1",
+    "eslint": "^4.13.1",
+    "eslint-config-egg": "^5.1.1",
+    "jsdoc": "^3.5.5",
+    "mongoose": "^4.13.7",
+    "power-assert": "^1.4.4",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod",
+    "docs": "jsdoc -c jsDocConfig.json -r"
+  },
+  "files": [
+    "app",
+    "lib",
+    "config",
+    "app.js"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+   
+  "bugs": {
+    "url": "https://github.com/lidianhao123/egg-rbac/issues"
+  },
+  "homepage": "https://github.com/lidianhao123/egg-rbac#readme",
+  "author": "1052993999@qq.com",
+  "license": "MIT",
+  "main": ".autod.conf.js",
+  "directories": {
+    "test": "test"
+  }
+}
