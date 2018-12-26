@@ -1,6 +1,6 @@
 {
   "name": "egg-rbac-instance",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Role Based Access Control for eggjs",
   "eggPlugin": {
     "name": "rbac",
@@ -56,15 +56,19 @@
   "ci": {
     "version": "8, 9"
   },
-   
   "bugs": {
-    "url": "https://github.com/lidianhao123/egg-rbac/issues"
+    "url": "https://github.com/reboy/egg-rbac-instance/issues"
   },
-  "homepage": "https://github.com/lidianhao123/egg-rbac#readme",
+  "homepage": "https://github.com/reboy/egg-rbac-instance#readme",
   "author": "1052993999@qq.com",
   "license": "MIT",
   "main": ".autod.conf.js",
   "directories": {
+    "lib": "lib",
     "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reboy/egg-rbac-instance.git"
   }
 }
