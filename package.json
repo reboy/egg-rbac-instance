@@ -1,6 +1,6 @@
 {
   "name": "egg-rbac-instance",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Role Based Access Control for eggjs",
   "eggPlugin": {
     "name": "rbac",
